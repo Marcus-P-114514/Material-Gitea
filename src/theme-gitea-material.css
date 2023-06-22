@@ -1,6 +1,6 @@
 body {
     font-family: Roboto,Noto,Helvetica,Arial,sans-serif;
-    margin-top: 64px;
+    margin-top: 64px !important;
 }
 
 .following.bar {
@@ -31,9 +31,12 @@ body {
     -webkit-transition-property: left,right;
     transition-property: left,right;
     will-change: left,right;
+    border: none;
 }
 
 .following.bar #navbar {
     -webkit-box-shadow: 0 2px 4px -1px rgba(0,0,0,.2), 0 4px 5px 0 rgba(0,0,0,.14), 0 1px 10px 0 rgba(0,0,0,.12);
     box-shadow: 0 2px 4px -1px rgba(0,0,0,.2), 0 4px 5px 0 rgba(0,0,0,.14), 0 1px 10px 0 rgba(0,0,0,.12);
+    height: 64px;
+    line-height: 64px;
 }
