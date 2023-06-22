@@ -1,5 +1,6 @@
 body {
     font-family: Roboto,Noto,Helvetica,Arial,sans-serif;
+    margin-top: 64px;
 }
 
 .following.bar {
@@ -19,6 +20,17 @@ body {
     width: 100%;
     background-color: #fff!important;
     color: #2196F3 !important;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    -webkit-transition-timing-function: cubic-bezier(0,0,.2,1);
+    transition-timing-function: cubic-bezier(0,0,.2,1);
+    -webkit-transition-duration: .3s;
+    transition-duration: .3s;
+    -webkit-transition-property: left,right;
+    transition-property: left,right;
+    will-change: left,right;
 }
 
 .following.bar #navbar {
